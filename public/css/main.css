@@ -56,11 +56,9 @@ p {
 .container {
   width: 300px; }
 
-.grid {
-  box-shadow: 5px 5px 10px #98a6bd; }
-
 .card {
-  padding: 1.2em; }
+  padding: 1.2em;
+  box-shadow: 3px 2px 30px #98a6bd; }
 
 .title-1 {
   color: #2ab2af;
@@ -86,9 +84,16 @@ p {
 .item-2 {
   background-color: #2ab2af; }
   .item-2 .first-line {
-    color: white; }
+    color: white;
+    position: relative; }
     .item-2 .first-line strong {
-      font-size: 1.8em; }
+      font-size: 2em; }
+    .item-2 .first-line::after {
+      content: 'per month';
+      color: #e5eff5;
+      position: absolute;
+      margin: 0.7em 0.5em;
+      opacity: 0.6; }
   .item-2 .second-line {
     color: white; }
   .item-2 .btn-sign-up {
