@@ -65,6 +65,7 @@ body {
   font-size: $font-size;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -81,9 +82,14 @@ p {
   width: 300px;
 }
 
+.grid {
+  overflow: hidden;
+  box-shadow: 3px 2px 30px #98a6bd;
+  border-radius: 5px;
+}
+
 .card {
   padding: 1.2em;
-  box-shadow: 3px 2px 30px #98a6bd;
 }
 
 // Titles
@@ -104,8 +110,8 @@ p {
 
 .item-1 {
   background-color: white;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  // border-top-right-radius: 5px;
+  // border-top-left-radius: 5px;
   p {
     color: $neutral-grayish-blue;
     span {
@@ -152,8 +158,8 @@ p {
 }
 
 .item-3 {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  // border-bottom-right-radius: 5px;
+  // border-bottom-left-radius: 5px;
   background-color: lighten($primary-color-cyan, 5%);
   p {
     width: 70%;

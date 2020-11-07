@@ -43,7 +43,8 @@ body {
 * {
   font-size: 16px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -56,9 +57,13 @@ p {
 .container {
   width: 300px; }
 
+.grid {
+  overflow: hidden;
+  box-shadow: 3px 2px 30px #98a6bd;
+  border-radius: 5px; }
+
 .card {
-  padding: 1.2em;
-  box-shadow: 3px 2px 30px #98a6bd; }
+  padding: 1.2em; }
 
 .title-1 {
   color: #2ab2af;
@@ -71,9 +76,7 @@ p {
   margin-bottom: 0.75em; }
 
 .item-1 {
-  background-color: white;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px; }
+  background-color: white; }
   .item-1 p {
     color: #98a6bd; }
     .item-1 p span {
@@ -109,8 +112,6 @@ p {
       background-color: #7f9617; }
 
 .item-3 {
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
   background-color: #2fc6c4; }
   .item-3 p {
     width: 70%;
